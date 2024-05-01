@@ -9,7 +9,7 @@ Bienvenido al Manual de Usuario de AutoManager, una aplicación para gestionar p
 
 👉 Completa el formulario con el nombre y apellido de la persona.
 
-💾 Haz clic en "Guardar" para crear la persona. 💾
+💾 Haz clic en "Guardar" para crear la persona.
 
 ![Añadir persona](AutoManager/images/añadir_persona.png)
 
