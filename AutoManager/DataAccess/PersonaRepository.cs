@@ -119,17 +119,15 @@ namespace AutoManager.DataAccess
                                     string? apellido = reader["Apellido"].ToString();
 
                                     
-                                if (nombre != null && apellido != null)
-                                {
-                                    Persona persona = new Persona(id, nombre, apellido);
-                                    personas.Add(persona);
-                                }
-                                else
-                                {
-                                    Console.WriteLine("El nombre o el apellido es nulo.");
-                                }
-
-                                    
+                                    if (nombre != null && apellido != null)
+                                    {
+                                        Persona persona = new Persona(id, nombre, apellido);
+                                        personas.Add(persona);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("El nombre o el apellido es nulo.");
+                                    }
                                 }
                             }
                         }

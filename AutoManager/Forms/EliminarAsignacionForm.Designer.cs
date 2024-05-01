@@ -49,7 +49,6 @@ namespace AutoManager.Forms
             this.Controls.Add(this.btnEliminar);
             this.Name = "EliminarAsignacionForm";
             this.Text = "Eliminar Asignación";
-            this.Load += new System.EventHandler(this.EliminarAsignacionForm_Load);
             this.ResumeLayout(false);
 
         }

@@ -18,10 +18,12 @@ namespace AutoManager.Forms
             InitializeComponent();
             CargarPersonas();
             CargarCoches();
+            
             _personaManager = new PersonaManager();
             _cocheManager = new CocheManager();
         }
 
+        // Cargar la lista de personas en el ComboBox
         private void CargarPersonas()
         {
             try
@@ -43,6 +45,7 @@ namespace AutoManager.Forms
             }
         }
 
+        // Cargar la lista de coches en el ComboBox
         private void CargarCoches()
         {
             try
@@ -64,6 +67,7 @@ namespace AutoManager.Forms
             }
         }
 
+        // Manejar el evento de clic del botón "Asignar"
         private void btnAsignar_Click(object sender, EventArgs e)
         {
             object? personaSeleccionadaItem = cboPersonas.SelectedItem;
@@ -79,6 +83,7 @@ namespace AutoManager.Forms
             CocheRepository cocheRepository = new CocheRepository();
             List<Coche> listaCoches = cocheRepository.ObtenerTodosLosCoches();
 
+            // Verificar si se seleccionó una persona y un coche
             if (string.IsNullOrEmpty(personaSeleccionada) || string.IsNullOrEmpty(cocheSeleccionado))
             {
                 MessageBox.Show("Por favor seleccione una persona y un coche.");
@@ -88,26 +93,28 @@ namespace AutoManager.Forms
             int personaId = ObtenerIdSeleccionadoPersona(listaPersonas, personaSeleccionada);
             int cocheId = ObtenerIdSeleccionadoCoche(listaCoches, cocheSeleccionado);
 
+            // Verificar si la persona y el coche seleccionados existen
             if (personaId == -1 || cocheId == -1)
             {
                 MessageBox.Show("No se pudo encontrar la persona o el coche seleccionado.");
                 return;
             }
 
-            //Verificar si el coche ya tiene propietario
+            // Verificar si el coche ya tiene un propietario asignado
             if (_cocheManager.CocheYaAsignado(cocheId))
             {
                 MessageBox.Show("Este coche ya está asignado a otra persona.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
+            // Asignar el coche a la persona
             _personaManager.AsignarCochesAPersona(personaId, cocheId);
 
             MessageBox.Show("Coche asignado exitosamente.");
             this.Close();
         }
 
-
+        // Método auxiliar para obtener el ID de la persona seleccionada
         private int ObtenerIdSeleccionadoPersona(List<Persona> lista, string seleccionado)
         {
             foreach (var persona in lista)
@@ -120,7 +127,8 @@ namespace AutoManager.Forms
             return -1;
         }
 
-         private int ObtenerIdSeleccionadoCoche(List<Coche> lista, string seleccionado)
+        // Método auxiliar para obtener el ID del coche seleccionado
+        private int ObtenerIdSeleccionadoCoche(List<Coche> lista, string seleccionado)
         {
             foreach (var coche in lista)
             {

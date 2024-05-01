@@ -41,7 +41,7 @@
             this.btnEliminarCoche = new System.Windows.Forms.Button();
             this.btnCrearAsignacion = new System.Windows.Forms.Button();
             this.btnEditarAsignacion = new System.Windows.Forms.Button();
-            this.btnEliminarAsignacion = new System.Windows.Forms.Button(); // Botón para eliminar asignación
+            this.btnEliminarAsignacion = new System.Windows.Forms.Button();
             this.dataGridViewAsignaciones = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPersonas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCoches)).BeginInit();
@@ -187,9 +187,9 @@
             this.btnEliminarAsignacion.Name = "btnEliminarAsignacion";
             this.btnEliminarAsignacion.Size = new System.Drawing.Size(90, 23);
             this.btnEliminarAsignacion.TabIndex = 12;
-            this.btnEliminarAsignacion.Text = "Eliminar Asignación"; // Texto del botón
+            this.btnEliminarAsignacion.Text = "Eliminar Asignación"; 
             this.btnEliminarAsignacion.UseVisualStyleBackColor = true;
-            this.btnEliminarAsignacion.Click += new System.EventHandler(this.btnEliminarAsignacion_Click); // Evento de clic para el botón
+            this.btnEliminarAsignacion.Click += new System.EventHandler(this.btnEliminarAsignacion_Click); 
             // 
             // dataGridViewAsignaciones
             // 

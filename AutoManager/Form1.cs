@@ -6,11 +6,13 @@ using System.Windows.Forms;
 
 namespace AutoManager.Forms
 {
+    // Formulario principal de la aplicación
     public partial class Form1 : Form
     {
-        private PersonaManager _personaManager;
-        private CocheManager _cocheManager;
-        private PropietarioCocheManager _asignacionManager;
+        private PersonaManager _personaManager; // Manager para gestionar las operaciones relacionadas con las personas
+        private CocheManager _cocheManager; // Manager para gestionar las operaciones relacionadas con los coches
+        private PropietarioCocheManager _asignacionManager; // Manager para gestionar las asignaciones de coches a personas
+
 
         public Form1()
         {
@@ -58,6 +60,7 @@ namespace AutoManager.Forms
             dataGridViewAsignaciones.Columns[2].Width = 160;
         }
 
+        // Método para mostrar las personas con sus coches asignados en el DataGridView correspondiente
         private void MostrarPersonasConCoches()
         {
             try
@@ -84,6 +87,7 @@ namespace AutoManager.Forms
             }
         }
 
+        // Método para obtener los coches asignados como una cadena de texto
         private string ObtenerCochesAsString(List<Coche> coches)
         {
             if (coches.Count == 0)
@@ -101,6 +105,7 @@ namespace AutoManager.Forms
             return cochesAsignados;
         }
 
+        // Método para mostrar los coches asignados a una persona en un cuadro de mensaje
         private void MostrarCochesAsignados(int personaId)
         {
             try
@@ -120,6 +125,7 @@ namespace AutoManager.Forms
             }
         }
 
+        // Método para manejar el evento de doble clic en una celda del DataGridView de personas        
         private void dataGridViewPersonas_CellDoubleClick(object? sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.RowIndex < dataGridViewPersonas.Rows.Count)
@@ -129,6 +135,7 @@ namespace AutoManager.Forms
             }
         }
 
+        // Método para mostrar los coches en el DataGridView correspondiente
         private void MostrarCoches()
         {
             try
@@ -155,6 +162,7 @@ namespace AutoManager.Forms
             }
         }
 
+        // Método para mostrar las asignaciones de coches en el DataGridView correspondiente
         private void MostrarAsignaciones()
         {
             try
@@ -183,6 +191,7 @@ namespace AutoManager.Forms
             }
         }
 
+        // Métodos para manejar los clics en los botones de agregar, editar y eliminar personas
         private void btnAgregarPersona_Click(object sender, EventArgs e)
         {
             CrearPersonaForm crearPersonaForm = new CrearPersonaForm();
@@ -212,6 +221,7 @@ namespace AutoManager.Forms
             }
         }
 
+        // Métodos para manejar los clics en los botones de agregar, editar y eliminar coches
         private void btnAgregarCoche_Click(object sender, EventArgs e)
         {
             CrearCocheForm crearCocheForm = new CrearCocheForm();
@@ -241,6 +251,7 @@ namespace AutoManager.Forms
             }
         }
 
+        // Métodos para manejar los clics en los botones de agregar, editar y eliminar asignaciones de coches
         private void btnCrearAsignacion_Click(object sender, EventArgs e)
         {
             using (AsignarCochesForm asignarCochesForm = new AsignarCochesForm())
@@ -276,6 +287,7 @@ namespace AutoManager.Forms
             }
         }
 
+        // Método para cerrar la aplicación al seleccionar la opción de salir del menú
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
