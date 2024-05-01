@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Windows.Forms;
 using AutoManager.Models;
 using AutoManager.DataAccess;
 using AutoManager.BusinessLogic;

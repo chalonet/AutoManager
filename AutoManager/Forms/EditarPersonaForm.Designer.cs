@@ -28,48 +28,48 @@ namespace AutoManager.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblNombre = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.lblApellido = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(95, 27);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(200, 20);
+            this.txtNombre.TabIndex = 0;
+            // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(13, 13);
+            this.lblNombre.Location = new System.Drawing.Point(29, 30);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(51, 15);
-            this.lblNombre.TabIndex = 0;
+            this.lblNombre.Size = new System.Drawing.Size(47, 13);
+            this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre:";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(85, 10);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(200, 23);
-            this.txtNombre.TabIndex = 1;
             // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(13, 48);
+            this.lblApellido.Location = new System.Drawing.Point(29, 63);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(51, 15);
-            this.lblApellido.TabIndex = 2;
+            this.lblApellido.Size = new System.Drawing.Size(47, 13);
+            this.lblApellido.TabIndex = 3;
             this.lblApellido.Text = "Apellido:";
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(85, 45);
+            this.txtApellido.Location = new System.Drawing.Point(95, 60);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(200, 23);
-            this.txtApellido.TabIndex = 3;
+            this.txtApellido.Size = new System.Drawing.Size(200, 20);
+            this.txtApellido.TabIndex = 2;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(85, 86);
+            this.btnGuardar.Location = new System.Drawing.Point(125, 100);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 4;
@@ -79,16 +79,17 @@ namespace AutoManager.Forms
             // 
             // EditarPersonaForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 121);
+            this.ClientSize = new System.Drawing.Size(331, 149);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.lblApellido);
-            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.txtNombre);
             this.Name = "EditarPersonaForm";
             this.Text = "Editar Persona";
+            this.Load += new System.EventHandler(this.EditarPersonaForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,8 +97,8 @@ namespace AutoManager.Forms
 
         #endregion
 
-        private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblApellido;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Button btnGuardar;

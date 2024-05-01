@@ -1,5 +1,3 @@
-using System;
-using System.Windows.Forms;
 using AutoManager.BusinessLogic;
 using AutoManager.Models;
 
@@ -24,7 +22,7 @@ namespace AutoManager.Forms
         {
             // Obtener la persona por su ID
             Persona persona = ObtenerPersonaPorId(_personaId);
-            
+
             txtNombre.Text = persona.Nombre;
             txtApellido.Text = persona.Apellido;
         }

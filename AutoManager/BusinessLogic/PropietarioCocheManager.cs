@@ -1,7 +1,5 @@
 using AutoManager.DataAccess;
 using AutoManager.Models;
-using System;
-using System.Collections.Generic;
 
 namespace AutoManager.BusinessLogic
 {

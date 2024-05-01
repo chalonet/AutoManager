@@ -1,5 +1,3 @@
-using System;
-using System.Windows.Forms;
 using AutoManager.BusinessLogic;
 using AutoManager.Models;
 

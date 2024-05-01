@@ -1,8 +1,5 @@
 using AutoManager.BusinessLogic;
 using AutoManager.Models;
-using System;
-using System.Collections.Generic;
-using System.Windows.Forms;
 
 namespace AutoManager.Forms
 {
