@@ -29,9 +29,13 @@ Bienvenido al Manual de Usuario de AutoManager, una aplicación para gestionar p
 
 ### Edición de Personas y Coches
 ✏️ Desde la pantalla principal, selecciona el elemento que deseas editar de la lista de Personas, Coches o Asignaciones.
+
 🔄 Haz clic en el botón "Editar" .
+
 📝 Realiza los cambios necesarios en el formulario.
+
 💾 Haz clic en "Guardar" para aplicar los cambios.
+
 
 ![Editar persona](/images/editar_persona.png)
 ![Editar coche](/images/editar_coche.png)
