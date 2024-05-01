@@ -1,13 +1,13 @@
 # Instalación de la Aplicación AutoManager
 
 ## Requisitos Previos
-- IDE: [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) 💻
-- Motor de base de datos: [Microsoft SQL Server Express](https://www.microsoft.com/es-es/sql-server/sql-server-downloads) 🛢️
-- Herramienta de gestión de bases de datos: [Microsoft SQL Management Studio](https://docs.microsoft.com/es-es/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) 🖥️
+- IDE: [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) 
+- Motor de base de datos: [Microsoft SQL Server Express](https://www.microsoft.com/es-es/sql-server/sql-server-downloads) 
+- Herramienta de gestión de bases de datos: [Microsoft SQL Management Studio](https://docs.microsoft.com/es-es/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 
 ## Pasos de Instalación
 
-### 1. Descarga e Instalación de Herramientas ![Descargar](https://img.icons8.com/ios/50/000000/download.png)
+### 1. Descarga e Instalación de Herramientas
 1. Descarga e instala Visual Studio Community desde el sitio oficial.
 2. Descarga e instala Microsoft SQL Server Express desde el sitio oficial.
 3. Descarga e instala Microsoft SQL Management Studio desde el sitio oficial.

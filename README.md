@@ -11,7 +11,7 @@ Bienvenido al Manual de Usuario de AutoManager, una aplicación para gestionar p
 
 💾 Haz clic en "Guardar" para crear la persona. 💾
 
-![Añadir persona](images/añadir_persona.png)
+![Añadir persona](AutoManager/images/añadir_persona.png)
 
 ### Creación de Coches
 🚘 Desde la pantalla principal, haz clic en el botón "Añadir" de la lista de coches.
@@ -20,7 +20,7 @@ Bienvenido al Manual de Usuario de AutoManager, una aplicación para gestionar p
 
 💾 Haz clic en "Guardar" para crear el coche. 
 
-![Añadir coche](/images/añadir_coche.png)
+![Añadir coche](AutoManager/images/añadir_coche.png)
 
 ### Asignación de Coches a Personas
 ✏️ Desde la pantalla principal, selecciona el boton "Asignaciones".
@@ -32,7 +32,7 @@ Bienvenido al Manual de Usuario de AutoManager, una aplicación para gestionar p
 ✔️ Haz clic en "Asignar" para asignar el coche a la persona.
 
 
-![Asignar coche](/images/asignar_coche.png)
+![Asignar coche](AutoManager/images/asignar_coche.png)
 
 
 ### Edición de Personas y Coches
@@ -45,11 +45,11 @@ Bienvenido al Manual de Usuario de AutoManager, una aplicación para gestionar p
 💾 Haz clic en "Guardar" para aplicar los cambios.
 
 
-![Editar persona](/images/editar_persona.png)
+![Editar persona](AutoManager/images/editar_persona.png)
 
-![Editar coche](/images/editar_coche.png)
+![Editar coche](AutoManager/images/editar_coche.png)
 
-![Editar asignación](/images/editar_asignacion.png)
+![Editar asignación](AutoManager/images/editar_asignacion.png)
 
 
 ### Eliminación de Personas y Coches
@@ -59,33 +59,33 @@ Bienvenido al Manual de Usuario de AutoManager, una aplicación para gestionar p
 
 ⚠️ Haz clic en "Elimnar Coche" "Elimnar Persona" para aplicar los cambios.
 
-![Eliminar coche](/images/eliminar_coche.png)
+![Eliminar coche](AutoManager/images/eliminar_coche.png)
 
 ## Validaciones
 
 ### Personas
 🔒 No puede existir más de una persona con el mismo nombre y apellido.
 
-![validación 1](/images/validacion1.png)
+![validación 1](AutoManager/images/validacion1.png)
 
 ### Coches
 🔒 No puede existir más de un coche con el mismo VIN.
 
-![validación 2](/images/validacion2.png)
+![validación 2](AutoManager/images/validacion2.png)
 
 ### Asignaciones
 🔒 Una persona puede tener uno o más coches.
 
-![validación 3](/images/validacion3.png)
+![validación 3](AutoManager/images/validacion3.png)
 
 🔒 Un coche solo puede pertenecer a una persona (solo puede existir un propietario por coche).
 
-![validación 4](/images/validacion4.png)
+![validación 4](AutoManager/images/validacion4.png)
 
 ## AutoManagerDB
 
 🔍 Comprovació de que tot el que emfet fins ara s'ha realitzat a la base de daes.
 
-![AutoManagerDB](/images/AutoManagerDB.png)
+![AutoManagerDB](AutoManager/images/AutoManagerDB.png)
 
 
