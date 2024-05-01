@@ -57,7 +57,7 @@ Bienvenido al Manual de Usuario de AutoManager, una aplicación para gestionar p
 
 🗑️ Haz clic en el botón "Eliminar" .
 
-⚠️ Haz clic en "Elimnar Coche" "Elimnar Persona" para aplicar los cambios.
+⚠️ Haz clic en "Eliminar Coche" "Eliminar Persona" para aplicar los cambios.
 
 ![Eliminar coche](AutoManager/images/eliminar_coche.png)
 
