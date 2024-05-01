@@ -6,23 +6,31 @@ Bienvenido al Manual de Usuario de AutoManager, una aplicación para gestionar p
 
 ### Creación de Personas
 👤 Desde la pantalla principal, haz clic en el botón "Añadir" de la lista de personas.
+
 👉 Completa el formulario con el nombre y apellido de la persona.
+
 💾 Haz clic en "Guardar" para crear la persona. 💾
 
-![Añadir persona](/images/añadir_persona.png)
+![Añadir persona](images/añadir_persona.png)
 
 ### Creación de Coches
 🚘 Desde la pantalla principal, haz clic en el botón "Añadir" de la lista de coches.
+
 📝 Completa el formulario con la marca, modelo y VIN del coche.
+
 💾 Haz clic en "Guardar" para crear el coche. 
 
 ![Añadir coche](/images/añadir_coche.png)
 
 ### Asignación de Coches a Personas
 ✏️ Desde la pantalla principal, selecciona el boton "Asignaciones".
+
 👤 Selecciona una persona de la lista desplegable.
+
 🚗 Selecciona un coche de la lista desplegable.
+
 ✔️ Haz clic en "Asignar" para asignar el coche a la persona.
+
 
 ![Asignar coche](/images/asignar_coche.png)
 
@@ -38,12 +46,17 @@ Bienvenido al Manual de Usuario de AutoManager, una aplicación para gestionar p
 
 
 ![Editar persona](/images/editar_persona.png)
+
 ![Editar coche](/images/editar_coche.png)
+
 ![Editar asignación](/images/editar_asignacion.png)
+
 
 ### Eliminación de Personas y Coches
 ❌ Desde la pantalla principal, selecciona el elemento que deseas eliminar de la lista de Personas o Coches.
+
 🗑️ Haz clic en el botón "Eliminar" .
+
 ⚠️ Haz clic en "Elimnar Coche" "Elimnar Persona" para aplicar los cambios.
 
 ![Eliminar coche](/images/eliminar_coche.png)
